@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="group">
+        <div class="title">
+          <img src="img/848e75d502e7cf8dc6187381ebc03355.png" alt="" />
+          <div class="namber">0</div>
+        </div>
+        <div class="big">
+          <img src="img/Logo-removebg-preview.png" alt="" onclick="incrementCounter()" />
+        </div>
+        <div class="zoom">
+          <div class="roket">
+            <div class="font"><i class="fa-solid fa-rocket"></i></div>
+            <div class="namber">300/1200</div>
+          </div>
+          <div class="limit_2">
+            <i class="fa-regular fa-clock"></i>
+            <div class="namber">20$</div>
+          </div>
+        </div>
+        <div class="main">
+          <div class="limit">
+            <div class="item">.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="item_1">
+        <a href="index.html">
+          <div class="name">home</div>
+          <i class="fa-solid fa-house"></i>
+        </a>
+      </div>
+      <div class="item_2">
+        <div class="name">Friends</div>
+        <i class="fa-solid fa-user-group"></i>
+      </div>
+      <div class="item_3">
+        <div class="name">Wallet</div>
+        <i class="fa-solid fa-wallet"></i>
+      </div>
+    </div>
+    <script>
+     function incrementCounter() {
+    let counterElement = document.querySelector('.title .namber');
+    let numbers = counterElement.innerText.split(',').map(num => parseInt(num));
+    
+    // Yangi sonni qo'shish
+    let newNumber = numbers[0] + 1;
+    numbers[0] = newNumber;
+    
+    // Yangi animatsiyali element yaratish
+    let animatedNumber = document.createElement('div');  
+    animatedNumber.innerText = '+1';
+    animatedNumber.style.position = 'absolute';
+    animatedNumber.style.color = 'yellow';
+    animatedNumber.style.fontSize = '30px';
+    animatedNumber.style.fontWeight = 'bold';
+    animatedNumber.style.left = '50%';
+    animatedNumber.style.top = '50%';
+    animatedNumber.style.transform = 'translate(-50%, -50%)';
+    animatedNumber.style.opacity = '1';
+    animatedNumber.style.transition = 'all 0.8s ease-out';
+    
+    let parentElement = document.querySelector('.big');
+    parentElement.appendChild(animatedNumber);
+    
+    // Animatsiya
+    setTimeout(() => {
+        animatedNumber.style.transform = 'translate(-50%, -200%)';
+        animatedNumber.style.opacity = '0';
+    }, 50);
+    
+    setTimeout(() => {
+        animatedNumber.remove();
+    }, 800);
+    
+    // Asosiy raqamni yangilash
+    counterElement.innerText = numbers.join(',');
+}
+    </script>
+  </body>
+</html>
+<!--git hup-->

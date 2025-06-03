@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: #000;
+}
+img {
+  width: 100%;
+}
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  height: fit-content;
+  z-index: 3;
+  position: relative;
+  position: sticky;
+  top: 0px;
+  bottom: -5px;
+  height: 100;
+}
+.group{
+  height: 700px;
+}
+.title .namber {
+  display: flex;
+  position: relative;
+  left: 22px;
+  z-index: 5;
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+  background: #020202;
+  width: 206px;
+  height: fit-content;
+}
+.title img {
+  background: transparent;
+  width: 50px;
+  z-index: 1;
+}
+.title {
+  display: flex;
+  gap: 0px;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  bottom: -41px;
+  left: -21px;
+}
+.big {
+  display: flex;
+  width: 250px;
+  margin: 78px auto;
+  position: relative;
+  bottom: -20px;
+}
+.footer .item i {
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  background: transparent;
+}
+.footer .item {
+  border: 1px solid #fff;
+  width: 33.3%;
+  background: #272a2f;
+
+}
+.footer .item_1 i {
+  color: #000000;
+  font-size: 22px;
+  display: flex;
+  gap: 31px;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+
+  background: transparent;
+}
+.footer .item_2 i {
+  color: #ffd83d;
+  font-size: 22px;
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  background: transparent;
+}
+.footer .item_3 i {
+  color: #ffd83d;
+  font-size: 22px;
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  background: transparent;
+}
+.footer .item_1 {
+  width: 33.3%;
+  background: #ffd83d;
+  border-radius: 4px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 77px;
+}
+.footer .item_1 .name {
+  position: absolute;
+  bottom: 12px;
+  color: #000;
+  background: #ffd83d;
+  font-size: 16px;
+  font-weight: 500;
+  margin: -4px 0px;
+}
+.footer .item_2 {
+  width: 33.3%;
+  background: #272a2f;
+  border-radius: 4px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 77px;
+}
+.footer .item_2 .name {
+  position: absolute;
+  bottom: 12px;
+  color: #ffd83d;
+  background: #272a2f;
+  font-size: 16px;
+  font-weight: 500;
+  margin: -4px 0px;
+}
+.footer .item_3 {
+  width: 33.3%;
+  background: #272a2f;
+  border-radius: 4px;
+  color: #ffd83d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 77px;
+}
+.footer .item_3 .name {
+  position: absolute;
+  bottom: 12px;
+  color: #ffd83d;
+  background: #272a2f;
+  font-size: 16px;
+  font-weight: 500;
+  margin: -4px 0px;
+}
+
+.footer {
+  width: 100%;
+  height: 90px;
+  display: flex;
+
+  gap: 2px;
+  position: relative;
+  position: sticky;
+  bottom: 10px;
+  z-index: 9;
+
+}
+.limit .item {
+  background: yellow;
+  width: 90%;
+  z-index: 6;
+  position: relative;
+  height: 10px;
+  color: transparent;
+  border-radius: 25px;
+  display: flex;
+  
+}
+.limit {
+  z-index: 1;
+  background: #c2c2c2;
+  width: 95%;
+  height: 10px;
+  border-radius: 25px;
+  margin: auto;
+  position: absolute;
+  top: 74px;
+  left: 8px;
+}
+.main {
+  position: relative;
+}
+.roket i {
+  color: #ffd83d;
+  width: 18px;
+  height: 18px;
+}
+.roket .namber {
+  padding: 0px 10px;
+}
+.roket {
+  color: #fff;
+  font-size: 28px;
+  display: flex;
+  gap: 10px;
+  position: relative;
+  top: 60px;
+  left: 10px;
+}
+.zoom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.limit_2 i {
+  color: #ffd83d;
+  width: 20px;
+  height: 20px;
+  font-size: 23px;
+}
+.limit_2 .namber {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  font-size: 25px;
+  color: #fff;
+}
+.limit_2 {
+  color: #ffd83d;
+  display: flex;
+  gap: 10px;
+  position: relative;
+  bottom: -58px;
+  left: -30px;
+}
